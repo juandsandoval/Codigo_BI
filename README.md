@@ -117,5 +117,69 @@ Este fragmento de código permite verificar que las tablas se han creado correct
    - **Descripción**: Este comando cierra la conexión a la base de datos SQLite, liberando los recursos asociados.
    - **Importancia**: Cerrar la conexión es esencial para evitar problemas de rendimiento en la base de datos.
 
+  # 📊 Análisis de la Tabla de Transacciones
+
+### 📝 Descripción General:
+Este repositorio contiene un análisis detallado de los datos de transacciones descargados. A continuación se presentan diferentes gráficos y sus respectivas interpretaciones para ayudar a comprender la completitud y distribución de los datos.
+
+---
+
+## 📈 Gráficos e Interpretación:
+
+### **Gráfico #1: Conteo de Registros por Columna**
+Este gráfico muestra el **conteo de registros** para cada columna de la tabla de transacciones. Cada columna (por ejemplo, `transaction_id`, `customer_id`, etc.) tiene **1000 valores**, indicando que **todas las transacciones están completas**.
+![image](https://github.com/user-attachments/assets/cbe0aa7b-36fa-4876-96a2-da73c0456857)
+
+---
+
+### **Gráfico #2: Conteo de Valores No Nulos por Columna**
+El gráfico refleja la cantidad de **valores no nulos** para cada columna en la tabla. De manera similar al gráfico anterior, todas las columnas contienen **1000 valores no nulos**, lo que asegura que **no hay datos faltantes** en este conjunto de transacciones.
+![image](https://github.com/user-attachments/assets/d94ef124-09c7-4bc0-8028-25e2904c5de0)
+
+---
+
+### **Gráfico #3: Completitud de Variables (%)**
+La gráfica, titulada **"Completitud de las variables"**, muestra que para variables como `embarazo_1`, `mamografia_1`, y otras, el **100% de los valores no son nulos**. Esto asegura que los datos están completos y son confiables para estas variables específicas.
+![image](https://github.com/user-attachments/assets/18293452-c375-47ea-bacb-de1068d99d03)
+
+---
+
+### **Gráfico #4: Matriz de Estadísticas Descriptivas**
+Este gráfico muestra las **estadísticas descriptivas** de las columnas `transaction_amount` y `fraudulent`:
+
+- **`transaction_amount`**: 
+  - **Media**: 624.0 
+  - **Desviación Estándar**: 659.17 
+  - **Mínimo**: 10.15 
+  - **Máximo**: 4984.22 (⚠️ resaltado por ser un valor significativamente alto)
+  
+- **`fraudulent`**: 
+  - **Media**: 0.05 
+  - **Mínimo**: 0.00 
+  - **Máximo**: 1.00
+![image](https://github.com/user-attachments/assets/b3d973ec-4355-4afb-8e49-c9a5abefe04b)
+
+---
+
+### **Gráfico #5: Distribución del Monto de Transacciones**
+Este histograma muestra la **distribución** de los montos de transacción (`transaction_amount`). Observamos que las **transacciones con montos bajos son más frecuentes**, y la altura de las barras disminuye a medida que el monto aumenta.
+![image](https://github.com/user-attachments/assets/63faacf3-2831-4e7b-9cfc-c952bd4f0d7d)
+
+---
+
+### **Gráfico #6: Matriz de Correlación**
+La **matriz de correlación** en forma de mapa de calor muestra la relación entre `transaction_amount` y `fraudulent`. 
+
+- **Correlación**: 0.82 entre ambas variables, lo que indica una **relación positiva fuerte
+
+![image](https://github.com/user-attachments/assets/61647f68-c8b9-421d-b97c-b58fe5c3dd88)
+
+
+---
+
+## 🚀 Conclusión:
+Este análisis verifica la **completitud de los datos** y explora la relación entre las transacciones y el fraude, proporcionando una base sólida para análisis más profundos.
+
+
 ## **Acerca del Autor**
 Este proyecto fue desarrollado por **Juan Sandoval**.
