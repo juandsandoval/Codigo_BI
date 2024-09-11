@@ -1,6 +1,7 @@
-# Codigo_BI
-Código Sesión 5 y 6 BUSINESS INTELLIGENCE
-¡Hola y bienvenido!
+# Business Intelligence - Código y Recursos
+
+Este repositorio recopila el código y los recursos esenciales para implementar soluciones de Business Intelligence. Aquí encontrarás herramientas clave para la extracción, transformación y análisis de datos, optimizando la toma de decisiones estratégicas mediante informes claros y efectivos.
+
 
 ## **Índice de Contenidos**
 - [Introducción](#introducción)
